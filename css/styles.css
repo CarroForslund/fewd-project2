@@ -1,7 +1,56 @@
 body {
   background-color: #fafafa;
+  text-align: center;
+  margin: 0;
 }
 
-.portfolio {
+nav {
+  padding: 0;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: .7em 0;
+  margin: .5em 0;
   background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  padding: .75em;
+}
+
+.profile-img {
+  max-width: 70%;
+}
+
+#portfolio {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+footer {
+  border-top: .5px solid #ededed;
+  justify-content: center;
+}
+
+/* HELPER CLASSES ---------------*/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
