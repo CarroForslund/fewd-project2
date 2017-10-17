@@ -27,21 +27,27 @@
 
       <main>
 
-        <div id="home">
-          <img src="images/responsive-layout-profile.png" alt="Student profile picture" class="profile-img"/>
-          <p>
-            Hi! I'm a front-end developer who loves responsive design and css.
-            I recently finished a degree in front-end development at Treehouse
-            and I am excited to put all my skills to use!
+        <div id="home" class="clearfix">
+          <img src="images/caroline.jpg" alt="Student profile picture" class="profile-img"/>
+          <p class="about">
+            Hi! I'm a designer and web developer who loves beautiful and useful websites.
+            I am working on my full-stack JavaScript Techdegree at Treehouse
+            and I am very excited to put all my skills to use!
           </p>
-        </div> <!-- about -->
+        </div> <!-- home -->
 
         <div id="skills" class="wrapper">
           <h2>Skills</h2>
+          <p>I am a native Swedish speaker and also fluent in English.
+            I have skills in:</p>
           <ul class="skills">
+            <li>UI/UX</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>C#</li>
           </ul>
         </div> <!-- skills -->
 
@@ -51,7 +57,7 @@
         <div class="wrapper">
 
           <h2>Portfolio</h2>
-          <div>
+          <div class="portfolio-project">
             <img src="images/portfolio-1.png" alt="Picture of Marketing Page project."/>
             <h3>Marketing Page</h3>
             <p>
@@ -60,7 +66,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="portfolio-project">
             <img src="images/portfolio-2.png" alt="Picture of Search Page project."/>
             <h3>Search Page</h3>
             <p>
@@ -69,7 +75,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="portfolio-project">
             <img src="images/portfolio-3.png" alt="Picture of Travel App project."/>
             <h3>Travel App</h3>
             <p>
@@ -78,7 +84,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="portfolio-project">
             <img src="images/portfolio-4.png" alt="Picture of Map of Favorite Sports project."/>
             <h3>Map of Favorite Sports</h3>
             <p>
@@ -87,7 +93,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="portfolio-project">
             <img src="images/portfolio-5.png" alt="Picture of Photo Gallery project."/>
             <h3>Photo Gallery</h3>
             <p>
@@ -96,7 +102,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="portfolio-project">
             <img src="images/portfolio-6.png" alt="Picture of Calculator project." />
             <h3>Calculator</h3>
             <p>
@@ -110,7 +116,7 @@
       <div id="contact" class="wrapper">
           <h2>Contact</h2>
           <p>
-            If you'se interested in chatting or want more information about what
+            If you're interested in chatting or want more information about what
             I've been working on, I'd love to hear from you!
           </p>
           <p>Phone <strong>+1 (111) 555-1234</strong></p>
@@ -118,9 +124,15 @@
       </div> <!-- contact -->
     </main>
 
-    <footer class="wrapper">
-      <p class="float-left">Student name</p>
-      <p class="float-right"><a href="#">Back to top</a></p>
+    <footer class="wrapper clearfix">
+      <p class="float-left"><strong>Student name<strong></p>
+      <ul class="footer-nav">
+        <a href="#"><li>Home</li></a>
+        <a href="#skills"><li>Skills</li></a>
+        <a href="#portfolio"><li>Portfolio</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+      <p class="footer-nav-mobile float-right"><a href="#">Back to top</a></p>
     </footer>
   </body>
   </html>

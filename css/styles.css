@@ -1,8 +1,9 @@
 body {
-  background-color: #fafafa;
+  background-color: #f7f5f0;
   text-align: center;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
 }
 
 nav,
@@ -14,23 +15,23 @@ nav ul li {
   list-style-type: none;
   padding: .7em 0;
   margin: .5em 0;
-  background-color: #ffffff;
+  background-color: #28d4bb;
+  color: #ffffff;
   transition: background-color .5s;
 }
 
 nav ul li:hover {
-  background-color: #28d4bb;
+  background-color: #ce1d6b;
 }
 
-nav a:hover {
-  color: #ffffff;
+nav a {
+  text-decoration: none;
 }
 
 a {
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: #000000;
+  color: #ce1d6b;
 }
 
 img {
@@ -85,8 +86,12 @@ ul.skills {
 }
 
 footer {
-  border-top: .5px solid #ededed;
+  border-top: 1px solid #ededed;
   justify-content: center;
+}
+
+.footer-nav {
+  display: none;
 }
 
 /* HELPER CLASSES ---------------*/
@@ -96,4 +101,63 @@ footer {
 
 .float-right {
   float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* TABLET SIZE
+---------------------------------*/
+@media screen and (min-width: 768px) {
+
+  nav ul li,
+  .footer-nav li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: transparent;
+    color: #4a4a4a;
+    padding: 0;
+    margin: 1em;
+  }
+
+  nav ul li:hover {
+    background-color: #ce1d6b;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  .profile-img {
+    max-width: 30%;
+    float: right;
+  }
+
+  .about {
+    max-width: 65%;
+    float: left;
+  }
+
+  .portfolio-project {
+    display: inline-block;
+    max-width: 45%;
+    margin: 1em;
+  }
+
+  .footer-nav {
+    display: inline-block;
+    float: right;
+  }
+
+  .footer-nav-mobile {
+    display: none;
+  }
+
+}
+
+/* DESKTOP SIZE
+---------------------------------*/
+@media (min-width: 1024px) {
+
 }
