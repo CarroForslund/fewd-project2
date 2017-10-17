@@ -2,12 +2,10 @@ body {
   background-color: #fafafa;
   text-align: center;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-nav {
-  padding: 0;
-}
-
+nav,
 nav ul {
   padding: 0;
 }
@@ -17,15 +15,37 @@ nav ul li {
   padding: .7em 0;
   margin: .5em 0;
   background-color: #ffffff;
+  transition: background-color .5s;
+}
+
+nav ul li:hover {
+  background-color: #28d4bb;
+}
+
+nav a:hover {
+  color: #ffffff;
 }
 
 a {
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
 }
 
 img {
   max-width: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -36,9 +56,32 @@ img {
   max-width: 70%;
 }
 
+ul.skills {
+  padding: 0;
+  text-align: center;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #00BADB;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #28d4bb;
+}
+
 #portfolio {
   background-color: #ffffff;
   margin: 0;
+}
+
+#portfolio img {
+  margin-top: 20px;
 }
 
 footer {
