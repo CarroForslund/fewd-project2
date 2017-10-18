@@ -49,12 +49,33 @@ h3 {
   font-weight: 400;
 }
 
+hr {
+  height: 1px;
+  background-color:#b9b9b9;
+  color:#b9b9b9;
+  border: 0 none;
+  margin-top: 5px;
+  margin-bottom:5px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #9b9b9b;
+}
+
 .wrapper {
   padding: .75em;
 }
 
 .profile-img {
   max-width: 70%;
+}
+
+#home:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 ul.skills {
@@ -86,15 +107,20 @@ ul.skills {
 }
 
 footer {
-  border-top: 1px solid #ededed;
   justify-content: center;
+  font-size: smaller;
+}
+
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .footer-nav {
   display: none;
 }
 
-/* HELPER CLASSES ---------------*/
 .float-left {
   float: left;
 }
@@ -103,21 +129,20 @@ footer {
   float: right;
 }
 
-.clearfix {
-  clear: both;
-}
-
 /* TABLET SIZE
 ---------------------------------*/
 @media screen and (min-width: 768px) {
 
+  body {
+    line-height: 1.5em;
+  }
+
   nav ul li,
-  .footer-nav li {
+  .footer-nav ul li {
     display: inline-block;
     list-style-type: none;
     background-color: transparent;
     color: #4a4a4a;
-    padding: 0;
     margin: 1em;
   }
 
@@ -130,24 +155,50 @@ footer {
   }
 
   .profile-img {
-    max-width: 30%;
+    max-width: 25%;
     float: right;
+    margin: 1em;
   }
 
   .about {
     max-width: 65%;
     float: left;
+    font-size: 1.2em;
+    margin: 1em;
+    line-height: 1.6em;
+  }
+
+  #skills {
+    font-size: 1.2em;
   }
 
   .portfolio-project {
     display: inline-block;
     max-width: 45%;
     margin: 1em;
+    vertical-align: top;
   }
 
+  #contact {
+    margin: 0 auto;
+    max-width: 70%;
+    font-size: 1.1em;
+  }
+
+  footer {
+    vertical-align: middle;
+  }
+
+  .student-name,
   .footer-nav {
     display: inline-block;
     float: right;
+    height: 100%;
+  }
+
+  .footer-nav ul {
+    margin: 0;
+    padding: 0;
   }
 
   .footer-nav-mobile {
@@ -158,6 +209,6 @@ footer {
 
 /* DESKTOP SIZE
 ---------------------------------*/
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
 }
