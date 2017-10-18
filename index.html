@@ -3,36 +3,41 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Student's Portfolio Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
 </head>
   <body>
-    <div class="wrapper">
 
-      <header>
-        <h1>Caroline Forslund</h1>
+      <header class="wrapper">
+
+        <h1 class="student">Caroline Forslund</h1>
+
+        <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
       </header>
 
-      <nav>
-          <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#skills"><li>Skills</li></a>
-            <a href="#portfolio"><li>Portfolio</li></a>
-            <a href="#contact"><li>Contact</li></a>
-          </ul>
-      </nav>
 
-      <main>
+
+      <main class="wrapper">
 
         <div id="home">
           <img src="images/caroline.jpg" alt="Student profile picture" class="profile-img"/>
           <p class="about">
             Hi! I'm a designer and web developer who loves beautiful and useful
-            websites. Right now I am working on my full-stack JavaScript Techdegree
-            at Treehouse and I am very excited to put all my skills to use soon!
+            websites. Right now I am working on two Techdegrees at Team Treehouse.
+            I want to become a Full-Stack JavaScript Developer with excellent Front-End skills.
+            Now I am working on my skills and my portfolio. I am very excited to put
+            all my skills to use soon!
           </p>
         </div> <!-- home -->
 
@@ -51,9 +56,7 @@
           </ul>
         </div> <!-- skills -->
 
-      </div> <!-- wrapper -->
-
-      <div id="portfolio">
+      <div id="portfolio" class="wrapper">
         <div class="wrapper">
 
           <h2>Portfolio</h2>
@@ -121,24 +124,28 @@
             I've been working on, I'd love to hear from you!
           </p>
           <p>Phone <strong>+46 (0)70-33 66 301</strong></p>
-          <p>Email <strong> info@carolineforslund.se</strong></p>
+          <p>Email <strong><a href="mailto:info@carolineforslund.se">info@carolineforslund.se</a></strong></p>
       </div> <!-- contact -->
+
     </main>
 
     <footer class="wrapper">
       <hr>
-      <div class="float-left">
+      <div class="student-name float-left">
         <p><strong>Caroline Forslund</strong></p>
       </div>
-      <div class="footer-nav">
+      <div class="footer-nav float-right">
         <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="#skills"><li>Skills</li></a>
-          <a href="#portfolio"><li>Portfolio</li></a>
-          <a href="#contact"><li>Contact</li></a>
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <p class="footer-nav-mobile float-right"><a href="#">Back to top</a></p>
+
+      <div class="footer-nav-mobile float-right">
+        <p><a href="#">Back to top</a></p>
+      </div>
     </footer>
   </body>
   </html>
