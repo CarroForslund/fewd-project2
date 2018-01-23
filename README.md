@@ -2,4 +2,4 @@
 
 The second project in Team Treehouse's Front End Developer Techdegree
 
-https://carroforslund.github.io/fewd-project2
+https://carroforslund.github.io/fewd-project2/
